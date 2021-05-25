@@ -1,0 +1,135 @@
+:root {
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Section */
+section {
+  padding: 60px 0;
+}
+.section-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-heading h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+/* Home Section */
+.home {
+  height: 100vh;
+  width: 100%;
+}
+.home .row-home {
+  display: flex;
+}
+.home .row-home .text-home {
+  text-align: center;
+}
+.home .row-home .text-home p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.home-button {
+  color: var(--white);
+  text-decoration: none;
+}
+.home-button:hover {
+  color: var(--white);
+}
+@media (min-width: 770px) {
+  .img-home {
+    flex: 1;
+    order: 2;
+  }
+  .text-home {
+    flex: 1;
+    order: 1;
+  }
+}
+.bg-text{
+  display: none;
+}
+@media (min-width: 990px) {
+  .container {
+    position: relative;
+  }
+  .bg-text {
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+
+/* About */
+.about-row{
+  display: flex;
+}
+@media (max-width: 990px) {
+  .img-about {
+    display: none;
+  }
+}
+.about-text {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* *************************Skills******************** */
+.skill {
+  padding: 20px;
+  text-align: center;
+}
+.skill:hover {
+  background: rgba(122, 122, 122, 0.12);
+}
+.skill img {
+  padding: 10px;
+  scale: 0.5;
+}
+.skill-heading {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Projects */
+.project {
+  margin: 15px;
+  transition: 0.3s;
+}
+.project:hover {
+  transform: scale(1.1);
+  background: rgba(122, 122, 122, 0.12);
+}
+.project-info {
+  margin-top: 12px;
+  text-align: center;
+}
+.project-info h4 a {
+  text-decoration: none;
+}
+/* Contact */
+.socials {
+  margin: 20px 0;
+}
